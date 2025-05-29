@@ -49,12 +49,5 @@ public class Main {
         System.out.println(prveCislo * druheCislo);
         System.out.println(prveCislo / druheCislo);*/
 
-
-
-
-
-
-
-
     }
 }
