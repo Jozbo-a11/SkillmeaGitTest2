@@ -34,7 +34,7 @@ public class Main {
         System.out.println(pozdrav3 + meno);*/
 
         //Kalkulacka
-        /*float prveCislo;
+        float prveCislo;
         float druheCislo;
         Scanner mojScanner = new Scanner(System.in);
 
@@ -47,7 +47,7 @@ public class Main {
         System.out.println(prveCislo + druheCislo);
         System.out.println(prveCislo - druheCislo);
         System.out.println(prveCislo * druheCislo);
-        System.out.println(prveCislo / druheCislo);*/
+        System.out.println(prveCislo / druheCislo);
 
     }
 }
