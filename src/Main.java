@@ -56,7 +56,16 @@ public class Main {
 
         System.out.println(slovo.toUpperCase());*/
 
+        int prveCislo = 8;
+        int druheCislo = 3;
+        //prveCislo = prveCislo + druheCislo;
+        //prveCislo += drujeCislo;
 
+        System.out.println(prveCislo + druheCislo);
+        System.out.println(prveCislo - druheCislo);
+        System.out.println(prveCislo % druheCislo);
+
+        System.out.println(prveCislo == druheCislo);
 
 
     }
