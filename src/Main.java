@@ -34,7 +34,7 @@ public class Main {
         System.out.println(pozdrav3 + meno);*/
 
         //Kalkulacka
-        float prveCislo;
+        /*float prveCislo;
         float druheCislo;
         Scanner mojScanner = new Scanner(System.in);
 
@@ -47,7 +47,17 @@ public class Main {
         System.out.println(prveCislo + druheCislo);
         System.out.println(prveCislo - druheCislo);
         System.out.println(prveCislo * druheCislo);
-        System.out.println(prveCislo / druheCislo);
+        System.out.println(prveCislo / druheCislo);*/
+
+        //Uzivatel zada slovo, vo vypyse budu vsetky pismena velke
+        /*Scanner mojScanner = new Scanner(System.in);
+        System.out.println("Zadaj svoje slovo:");
+        String slovo = mojScanner.nextLine();
+
+        System.out.println(slovo.toUpperCase());*/
+
+
+
 
     }
 }
