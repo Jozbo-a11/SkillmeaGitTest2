@@ -56,7 +56,7 @@ public class Main {
 
         System.out.println(slovo.toUpperCase());*/
 
-        int prveCislo = 8;
+        /*int prveCislo = 8;
         int druheCislo = 3;
         //prveCislo = prveCislo + druheCislo;
         //prveCislo += drujeCislo;
@@ -65,7 +65,14 @@ public class Main {
         System.out.println(prveCislo - druheCislo);
         System.out.println(prveCislo % druheCislo);
 
-        System.out.println(prveCislo == druheCislo);
+        System.out.println(prveCislo == druheCislo);*/
+
+        int cisloKPorovnaniu = 9;
+
+        System.out.println(cisloKPorovnaniu > 0 && cisloKPorovnaniu <=8);
+        System.out.println(cisloKPorovnaniu > 8 || cisloKPorovnaniu <0);
+        System.out.println(!(cisloKPorovnaniu > 8 || cisloKPorovnaniu <0));
+
 
 
     }
