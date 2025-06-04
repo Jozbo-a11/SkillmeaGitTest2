@@ -67,11 +67,14 @@ public class Main {
 
         System.out.println(prveCislo == druheCislo);*/
 
-        int cisloKPorovnaniu = 9;
+        /*int cisloKPorovnaniu = 9;
 
         System.out.println(cisloKPorovnaniu > 0 && cisloKPorovnaniu <=8);
         System.out.println(cisloKPorovnaniu > 8 || cisloKPorovnaniu <0);
-        System.out.println(!(cisloKPorovnaniu > 8 || cisloKPorovnaniu <0));
+        System.out.println(!(cisloKPorovnaniu > 8 || cisloKPorovnaniu <0));*/
+
+
+
 
 
 
