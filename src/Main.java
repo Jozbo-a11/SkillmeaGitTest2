@@ -122,7 +122,7 @@ public class Main {
         System.out.println("BMI");*/
 
         //Neparne cislo = vyhrava, Parne cislo = prehrava
-        int hodeneCislo;
+        /*int hodeneCislo;
         Random nahodnyGenerator = new Random();
 
         System.out.println("Pre hodenie kockou stiskni Enter");
@@ -137,7 +137,7 @@ public class Main {
         }
         else {
             System.out.println("Parne - Prehravas");
-        }
+        }*/
 
 
 
