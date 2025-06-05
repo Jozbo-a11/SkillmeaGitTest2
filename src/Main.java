@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -120,8 +121,23 @@ public class Main {
         }
         System.out.println("BMI");*/
 
-        //
+        //Neparne cislo = vyhrava, Parne cislo = prehrava
+        int hodeneCislo;
+        Random nahodnyGenerator = new Random();
 
+        System.out.println("Pre hodenie kockou stiskni Enter");
+        Scanner mojScanner = new Scanner(System.in);
+        mojScanner.nextLine();
+
+        hodeneCislo = nahodnyGenerator.nextInt(1, 7);
+        System.out.println("Hodene cislo je: " + hodeneCislo);
+
+        if(hodeneCislo % 2 == 1) {
+            System.out.println("Neparne - Vyhravas!");
+        }
+        else {
+            System.out.println("Parne - Prehravas");
+        }
 
 
 
