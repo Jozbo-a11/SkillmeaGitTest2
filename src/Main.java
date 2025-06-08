@@ -198,5 +198,21 @@ public class Main {
 
         System.out.println(znamky[2]);*/
 
+        /*String[] mena = new String[] {"Peter", "Jan", "Katka", "Eva", "Jana"};
+        mena[0] = "Linda";
+        System.out.println(mena[0]);*/
+
+        /*int[][] pole2D = new int[3][3];
+        pole2D[0][0] = 464;
+        pole2D[0][1] = -92;*/
+
+        //Smycky
+        for(int i = 0; i < 10; i++){
+            System.out.println(i +" Hello world");
+        }
+
+
+
+
     }
 }
