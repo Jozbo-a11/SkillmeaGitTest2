@@ -34,6 +34,7 @@ public class Main {
         String meno = mojScanner.nextLine();
         System.out.println(pozdrav3 + meno);*/
 
+
         //Kalkulacka
         /*float prveCislo;
         float druheCislo;
@@ -49,6 +50,7 @@ public class Main {
         System.out.println(prveCislo - druheCislo);
         System.out.println(prveCislo * druheCislo);
         System.out.println(prveCislo / druheCislo);*/
+
 
         //Uzivatel zada slovo, vo vypyse budu vsetky pismena velke
         /*Scanner mojScanner = new Scanner(System.in);
@@ -207,12 +209,119 @@ public class Main {
         pole2D[0][1] = -92;*/
 
         //Smycky
-        for(int i = 0; i < 10; i++){
-            System.out.println(i +" Hello world");
+        /*for(int i = 0; i < 10; i++){
+            //System.out.println(i * 5);
+            if(i == 5){
+                //break;
+                continue;
+            }
+            System.out.println(i);
+        }*/
+
+        /*String[] mena = new String[] {"Peter", "Jan", "Katka", "Eva", "Jana"};
+        //for
+        for(int i = 0; i < mena.length; i ++){
+            System.out.println(mena[i]);
         }
+        //foreach
+        for(String meno: mena){
+            System.out.println(meno);
+        }*/
+
+        //while
+        /*int riadiacaPremenna = 0;
+        while (riadiacaPremenna < 5){
+            System.out.println(riadiacaPremenna);
+            riadiacaPremenna++;
+        }
+        System.out.println("Tu pokracujem");*/
+
+        //do...while
+        /*int riadiacaPremenna2 = 0;
+        do {
+            System.out.println(riadiacaPremenna2);
+            riadiacaPremenna2++;
+        } while(riadiacaPremenna2 < 5);
+
+        System.out.println("Tu pokracujem");*/
 
 
+        //Vylepsenie ulohy Hod_kockou
+        /*int hodeneCislo;
+        Random nahodnyGenerator = new Random();
+        Scanner mojScanner = new Scanner(System.in);
+        boolean riadiacaPremenna = true;
+        String ukoncenie;
 
+        do {
+            System.out.println("Pre hodenie kockou stiskni Enter");
+            mojScanner.nextLine();
+
+            hodeneCislo = nahodnyGenerator.nextInt(1, 7);
+            System.out.println("Hodene cislo je: " + hodeneCislo);
+
+            if (hodeneCislo % 2 == 1) {
+                System.out.println("Neparne - Vyhravas!");
+            } else {
+                System.out.println("Parne - Prehravas");
+            }
+
+            System.out.println("Pre ukoncenie hry zadaj pismeno q");
+            ukoncenie = mojScanner.nextLine();
+            if(ukoncenie.equals("q")){
+                riadiacaPremenna = false;
+            }
+
+        } while(riadiacaPremenna);*/
+
+
+        //21 (Blackjack)
+        Scanner mojScanner = new Scanner(System.in);
+        Random nahGen = new Random();
+        int skoreHraca = 0;
+        int skoreKrupiera = 0;
+        int tahanaKarta;
+        String uzivatelskyVstup;
+
+        do {
+            tahanaKarta = nahGen.nextInt(1, 14);
+            System.out.println("Tahana karta je:" + tahanaKarta);
+            skoreHraca = skoreHraca + tahanaKarta;
+            System.out.println("Skore hraca je:" + skoreHraca);
+
+            if(skoreHraca > 21){
+                System.out.println("Prehral si!");
+                break;
+            }
+
+            System.out.println("Chces dalsiu kartu stiskni - d");
+            System.out.println("Uz neches kartu stiskni - q");
+            uzivatelskyVstup = mojScanner.nextLine();
+
+            if(uzivatelskyVstup.equals("d")){
+                continue;
+            }
+            else if (uzivatelskyVstup.equals("q")) {
+                while (skoreKrupiera < skoreHraca){
+                    skoreKrupiera += nahGen.nextInt(1, 14);
+                }
+
+            }
+
+        }while(true);
+
+        System.out.println("Skore hraca: " + skoreHraca);
+        System.out.println("Skore krupiera: " + skoreKrupiera);
+
+        if((skoreHraca > skoreKrupiera && skoreHraca <= 21) || skoreKrupiera > 21){
+            System.out.println("Vyhral si");
+        } else if (skoreHraca == skoreKrupiera) {
+            System.out.println("Je to remiza");
+        }
+        else {
+            System.out.println("Prehral si");
+        }
+        System.out.println("Dakujem za hru");
 
     }
 }
